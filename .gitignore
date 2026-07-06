@@ -1,0 +1,14 @@
+# Internal notes — local only, never published
+docs/
+
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock
+
+# Hugo modules cache (if ever used)
+_vendor/
+
+# Editor / OS noise
+.DS_Store
+*.swp

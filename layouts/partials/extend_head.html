@@ -1,0 +1,9 @@
+{{- /* Analytics — active only when a token/code is set in hugo.yaml and not serving locally */ -}}
+{{- if not hugo.IsServer -}}
+{{- with site.Params.analytics.cloudflare.token }}
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ . }}"}'></script>
+{{- end }}
+{{- with site.Params.analytics.goatcounter.code }}
+<script data-goatcounter="https://{{ . }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+{{- end }}
+{{- end -}}

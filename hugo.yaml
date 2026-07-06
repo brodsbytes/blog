@@ -1,0 +1,99 @@
+# Site configuration — see https://github.com/adityatelange/hugo-PaperMod/wiki
+#
+# baseURL is the single swap-point for the custom domain (brodsbytes.blog,
+# to be purchased). Note: the GitHub Actions workflow overrides this at build
+# time with the GitHub Pages URL, so this value only takes effect once the
+# domain is attached in repo settings (or for local production builds).
+baseURL: "https://brodsbytes.blog/"
+
+title: "Brod's Blog" # OPEN DECISION: placeholder title
+theme: PaperMod
+locale: en-au
+timeZone: Australia/Brisbane
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# JSON output on home is required for PaperMod's Fuse.js search
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# Required by the GitHub Pages workflow (image cache lives in CI cacheDir)
+caches:
+  images:
+    dir: :cacheDir/images
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+pagination:
+  pagerSize: 10
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: archives
+      name: Archive
+      url: /archives/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 40
+
+params:
+  env: production
+  description: "Homelab, Linux, and self-hosted infrastructure tinkering." # OPEN DECISION: tagline
+  keywords: [blog, homelab, linux, self-hosted]
+  defaultTheme: auto # follows the visitor's OS/browser light-dark preference
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  ShowFullTextinRSS: true
+  ShowToc: true
+  TocOpen: false
+
+  homeInfoParams:
+    Title: "G'day 👋"
+    Content: >
+      Notes from the homelab — Linux, self-hosted infrastructure, and
+      general tinkering.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/" # TODO: add username
+    - name: rss
+      url: "index.xml"
+
+  fuseOpts: # search tuning for the /search/ page
+    isCaseSensitive: false
+    shouldSort: true
+    minMatchCharLength: 2
+    keys: [title, permalink, summary, content]
+
+  # Analytics: leave token empty until the domain is on Cloudflare.
+  # Filling in the token enables the beacon via layouts/partials/extend_head.html.
+  analytics:
+    cloudflare:
+      token: "" # from Cloudflare dashboard > Web Analytics
+    goatcounter:
+      code: "" # fallback option: your goatcounter site code, e.g. "brodsblog"
