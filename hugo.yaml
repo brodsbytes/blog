@@ -6,7 +6,7 @@
 # domain is attached in repo settings (or for local production builds).
 baseURL: "https://brodsbytes.blog/"
 
-title: "Brod's Blog" # OPEN DECISION: placeholder title
+title: "brods blog" # OPEN DECISION: placeholder title
 theme: PaperMod
 locale: en-au
 timeZone: Australia/Brisbane
@@ -73,14 +73,13 @@ params:
   TocOpen: false
 
   homeInfoParams:
-    Title: "G'day 👋"
+    Title: "Hey there"
     Content: >
-      Notes from the homelab — Linux, self-hosted infrastructure, and
-      general tinkering.
+      Notes from my tech tinkering. Linux, homelabs & self-hosted infrastructure.
 
   socialIcons:
     - name: github
-      url: "https://github.com/" # TODO: add username
+      url: "https://github.com/brodsbytes"
     - name: rss
       url: "index.xml"
 
