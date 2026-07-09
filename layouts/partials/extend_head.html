@@ -1,3 +1,8 @@
+{{- /* Adaptive favicon: SVG swaps black/white via prefers-color-scheme.
+   Browsers that support SVG favicons prefer this over the theme's default
+   favicon.ico link; older browsers just ignore it and use the .ico. */ -}}
+<link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | absURL }}">
+
 {{- /* Analytics — active only when a token/code is set in hugo.yaml and not serving locally */ -}}
 {{- if not hugo.IsServer -}}
 {{- with site.Params.analytics.cloudflare.token }}
