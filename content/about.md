@@ -7,13 +7,13 @@ showtoc: false
 ShowReadingTime: false
 ---
 
-Hey there - I'm Brodie, an Australian IT day-worker and chronic side project starter.
+Howdy - I'm Brodie, an Australian IT worker by day and a chronic side-project starter after hours.
 
-This blog is where I document my homelab, Linux tinkering, and self-hosted
-infrastructure projects: partly as a public notebook, partly as a portfolio,
-and mostly because breaking things at home is fun.
+This blog is where I document my tech tinkering: Linux, automation & homelabing. 
+Partly as a public notebook for my projects, somewhat as a portfolio,
+but mostly because this is another thing to tinker with.
 
-*Note: Some links in my blogs are affiliate links - I earn a small commission if you purchase it, at no extra cost to you
-This blog is not intended for revenue - I'll only use affiliate links for things I'm already writing about, and it won't change my opinions*
+*Some links in my posts are affiliate links which means I earn a small commission if you purchase through them, at no extra cost to you.
+This blog is not intended for revenue - I'll only use affiliate links for things I'm already writing about, and it won't change my opinions.*
 
-<!-- TODO: expand this — links, current homelab summary, contact. -->
+<!-- TODO: expand this - links, current homelab summary, contact(?) -->

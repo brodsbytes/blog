@@ -6,7 +6,7 @@
 # domain is attached in repo settings (or for local production builds).
 baseURL: "https://brodsbytes.blog/"
 
-title: "brods blog" # OPEN DECISION: placeholder title
+title: "brodsbytes blog"
 theme: PaperMod
 locale: en-au
 timeZone: Australia/Brisbane
@@ -49,14 +49,10 @@ menu:
       name: Search
       url: /search/
       weight: 30
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 40
 
 params:
   env: production
-  description: "Homelab, Linux, and self-hosted infrastructure tinkering." # OPEN DECISION: tagline
+  description: "Homelab, Linux, and self-hosted infrastructure tinkering." 
   keywords: [blog, homelab, linux, self-hosted]
   defaultTheme: auto # follows the visitor's OS/browser light-dark preference
   disableThemeToggle: false
@@ -73,15 +69,15 @@ params:
   TocOpen: false
 
   homeInfoParams:
-    Title: "Hey there"
+    Title: "Hi there"
     Content: >
-      Notes from my tech tinkering. Linux, homelabs & self-hosted infrastructure.
+      Notes from my tech tinkering: Linux, automation & homelabing.
 
   socialIcons:
     - name: github
       url: "https://github.com/brodsbytes"
-    - name: rss
-      url: "index.xml"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/brodie-rummery-b41b21146/"
 
   fuseOpts: # search tuning for the /search/ page
     isCaseSensitive: false
@@ -95,4 +91,4 @@ params:
     cloudflare:
       token: "" # from Cloudflare dashboard > Web Analytics
     goatcounter:
-      code: "" # fallback option: your goatcounter site code, e.g. "brodsblog"
+      code: "" # fallback option: goatcounter site code, e.g. "brodsblog"

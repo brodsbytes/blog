@@ -1,6 +1,9 @@
 # Internal notes — local only, never published
 docs/
 
+# Work-in-progress posts — local only until moved up to content/posts/
+content/posts/drafts/
+
 # Hugo build output
 public/
 resources/_gen/
