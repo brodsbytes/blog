@@ -3,7 +3,7 @@ title: "Tech Blog Stack in 2026"
 date: 2026-07-07T17:01:32+10:00
 draft: false
 tags: [blog,tech,stack,hugo,papermod,github]
-summary: "The stack I used to setup a tech blog in one afternoon"
+summary: "The stack I used to setup this tech blog in one afternoon"
 ---
 
 ## The stack at a glance

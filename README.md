@@ -10,8 +10,7 @@ docs/ is gitignored; keep it that way.
 # brodsbytes blog
 
 Source for my personal tech blog — homelab, Linux, and self-hosted
-infrastructure. Live at https://brodsbytes.github.io/blog/ (custom domain
-coming).
+infrastructure. Live at https://brodsbytes.blog 
 
 Built with [Hugo](https://gohugo.io/) and
 [PaperMod Theme](https://github.com/adityatelange/hugo-PaperMod), deployed to
