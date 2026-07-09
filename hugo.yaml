@@ -1,9 +1,10 @@
 # Site configuration — see https://github.com/adityatelange/hugo-PaperMod/wiki
 #
 # baseURL is the single swap-point for the custom domain (brodsbytes.blog,
-# to be purchased). Note: the GitHub Actions workflow overrides this at build
-# time with the GitHub Pages URL, so this value only takes effect once the
-# domain is attached in repo settings (or for local production builds).
+# attached 2026-07-09). The GitHub Actions workflow overrides this at build
+# time via actions/configure-pages, which reads the live Pages config — so
+# it now resolves to https://brodsbytes.blog/ too. This value only matters
+# for local production builds.
 baseURL: "https://brodsbytes.blog/"
 
 title: "brodsbytes blog"
@@ -85,10 +86,9 @@ params:
     minMatchCharLength: 2
     keys: [title, permalink, summary, content]
 
-  # Analytics: leave token empty until the domain is on Cloudflare.
-  # Filling in the token enables the beacon via layouts/partials/extend_head.html.
+  # Analytics: beacon enabled via layouts/partials/extend_head.html.
   analytics:
     cloudflare:
-      token: "" # from Cloudflare dashboard > Web Analytics
+      token: "fda3c82743d54436a0fde87005dec126" # from Cloudflare dashboard > Web Analytics
     goatcounter:
       code: "" # fallback option: goatcounter site code, e.g. "brodsblog"
