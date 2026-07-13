@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" width="900" height="430" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" role="img" aria-label="Horizontal bar chart of the Artificial Analysis Intelligence Index. GPT-5.5 (free ChatGPT) scores 55 and Claude Sonnet 5 (free Claude) scores 53; the models that run locally on the Neo score lower — Qwen3.6-35B-A3B 32 and Gemma 4 26B 26. Qwen leads the local models and reaches roughly 60 percent of the free cloud chatbots' score.">
+  <style>
+    :root { color-scheme: light dark; }
+    .surface { fill: #fcfcfb; }
+    .ink   { fill: #0b0b0b; }
+    .ink2  { fill: #52514e; }
+    .muted { fill: #898781; }
+    .grid  { stroke: #e1e0d9; }
+    .axis  { stroke: #c3c2b7; }
+    .local { fill: #2a78d6; }
+    .cloud { fill: #eb6834; }
+    @media (prefers-color-scheme: dark) {
+      .surface { fill: #1a1a19; }
+      .ink   { fill: #ffffff; }
+      .ink2  { fill: #c3c2b7; }
+      .grid  { stroke: #2c2c2a; }
+      .axis  { stroke: #383835; }
+      .local { fill: #3987e5; }
+      .cloud { fill: #d95926; }
+    }
+    .title { font-size: 19px; font-weight: 700; }
+    .sub   { font-size: 12.5px; }
+    .leg   { font-size: 13px; }
+    .val   { font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .name  { font-size: 14px; font-weight: 600; text-anchor: end; }
+    .role  { font-size: 11px; text-anchor: end; }
+    .xtick { font-size: 11px; text-anchor: middle; font-variant-numeric: tabular-nums; }
+  </style>
+
+  <rect x="0" y="0" width="900" height="430" rx="10" class="surface"/>
+
+  <!-- Title -->
+  <text x="24" y="30" class="title ink">How capable? What the Neo runs vs the free cloud chatbots</text>
+  <text x="24" y="50" class="sub ink2">Artificial Analysis Intelligence Index — same benchmark suite across all models · higher is better</text>
+
+  <!-- Legend -->
+  <rect x="24"  y="62" width="12" height="12" rx="3" class="local"/>
+  <text x="42"  y="72" class="leg ink2">Runs on the Neo (local)</text>
+  <rect x="230" y="62" width="12" height="12" rx="3" class="cloud"/>
+  <text x="248" y="72" class="leg ink2">Free cloud chatbot (default free tier)</text>
+
+  <!-- Gridlines (0-60) -->
+  <g>
+    <line x1="250" y1="118" x2="250" y2="376" class="axis" stroke-width="1"/>
+    <line x1="350" y1="118" x2="350" y2="376" class="grid" stroke-width="1"/>
+    <line x1="450" y1="118" x2="450" y2="376" class="grid" stroke-width="1"/>
+    <line x1="550" y1="118" x2="550" y2="376" class="grid" stroke-width="1"/>
+    <line x1="650" y1="118" x2="650" y2="376" class="grid" stroke-width="1"/>
+    <line x1="750" y1="118" x2="750" y2="376" class="grid" stroke-width="1"/>
+    <line x1="850" y1="118" x2="850" y2="376" class="grid" stroke-width="1"/>
+    <text x="250" y="392" class="xtick muted">0</text>
+    <text x="350" y="392" class="xtick muted">10</text>
+    <text x="450" y="392" class="xtick muted">20</text>
+    <text x="550" y="392" class="xtick muted">30</text>
+    <text x="650" y="392" class="xtick muted">40</text>
+    <text x="750" y="392" class="xtick muted">50</text>
+    <text x="850" y="392" class="xtick muted">60</text>
+  </g>
+
+  <!-- Row 0: GPT-5.5 -->
+  <rect class="cloud" x="250" y="130" width="550" height="36" rx="4"/>
+  <text class="val ink" x="810" y="153">55</text>
+  <text class="name ink"  x="238" y="145">GPT-5.5</text>
+  <text class="role muted" x="238" y="161">ChatGPT free tier</text>
+
+  <!-- Row 1: Claude Sonnet 5 -->
+  <rect class="cloud" x="250" y="196" width="530" height="36" rx="4"/>
+  <text class="val ink" x="790" y="219">53</text>
+  <text class="name ink"  x="238" y="211">Claude Sonnet 5</text>
+  <text class="role muted" x="238" y="227">Claude free tier</text>
+
+  <!-- Row 2: Qwen3.6-35B-A3B -->
+  <rect class="local" x="250" y="262" width="320" height="36" rx="4"/>
+  <text class="val ink" x="580" y="285">32</text>
+  <text class="name ink"  x="238" y="277">Qwen3.6-35B-A3B</text>
+  <text class="role muted" x="238" y="293">on the Neo · local</text>
+
+  <!-- Row 3: Gemma 4 26B -->
+  <rect class="local" x="250" y="328" width="260" height="36" rx="4"/>
+  <text class="val ink" x="520" y="351">26</text>
+  <text class="name ink"  x="238" y="343">Gemma 4 26B (MoE)</text>
+  <text class="role muted" x="238" y="359">on the Neo · local</text>
+
+  <text x="24" y="424" class="sub muted">Cloud = each service's default free-tier model (GPT-5.5, Claude Sonnet 5), reasoning enabled. Source: Artificial Analysis · Chart: brodsbytes.blog</text>
+</svg>
