@@ -3,7 +3,7 @@ title: "Bosgame M4 Neo: Running 35B Local LLMs on a $970 Mini PC"
 date: 2026-07-09T19:33:36+10:00
 draft: false
 tags: ["mini-pc", "local-llm", "ollama", "linux", "self-hosted", "bosgame", "hardware"]
-summary: "Why I bought a Mini PC - Bosgame M4 Neo (64GB RAM) to run 35b-class local LLMs on Linux.  benchmarks, thermals, Vulkan vs ROCm, and power draw vs a discrete-GPU desktop."
+summary: "Why I bought a Mini PC - Bosgame M4 Neo (64GB RAM) - to run 35b-class local LLMs on Linux. Benchmarks, thermals, Vulkan vs ROCm, and power draw vs a discrete-GPU desktop."
 ---
 
 *Some links in this post are affiliate links - if you buy through them I may earn a small commission, at no extra cost to you.*
