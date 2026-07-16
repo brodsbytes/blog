@@ -22,7 +22,7 @@ Overall, I am satisfied with the build quality and performance, the only negativ
 
 *At the time of writing the M4 NEO is out of stock. There are of course many other options that fit the requirements needed to run 35b models locally. Here are a couple other Mini PCs in stock:*
 - [Beelink SER9 MAX](https://amzn.to/44i5JYH) - Basically the same to the Bosgame M4 Neo for local LLM speeds. The "H 255" is a rebadged Ryzen 7 8745H. Same Radeon 780M iGPU, so with 64GB of ram, right on par with the Bosgame M4 Neo 7840HS. It comes with a couple of minor feature improvements over the M4 Neo that aren't relevant here.
-- [GMKtec AI Mini PC Ultra 9](https://amzn.to/4vkUWbe) - Definitely more powerful than the Bosgame; multi-core: 16 cores  vs 8, ~20% faster overall CPU and 40%+ in multi-threaded work, plus a stronger Arc iGPU and Oculink. This is for anyone wanting to step up.
+- [GMKtec AI Mini PC Ultra 9](https://amzn.to/4vkUWbe) - More powerful for general workloads: Multi-core: 16 cores vs 8, ~20% faster overall CPU and 40%+ in multi-threaded work. But, same LLM speeds as the M4 NEO/SER9 MAX (speeds are bottlenecked by RAM). 
 
 
 ## Why 64GB RAM to run 35b models?
